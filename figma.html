@@ -1,0 +1,53 @@
+<?php 
+date_default_timezone_set('Africa/Douala');
+$date= date("l jS \of F Y") ;
+$time=date(" h:i:s a");
+
+
+?>
+<!DOCTYPE>
+<html>
+<head><title>Figma Implementation</title>
+ <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alike+Angular" />   
+    </head>
+
+<style>
+html { 
+  background: url(bootstrap/ima2.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+ .text{
+     font-family:"Alike Angular";
+     text-align: center;
+     margin-top:60px
+    }
+    #welcome{
+        color:#7D754B;
+        font-size: 48px;
+    }
+    #friday{color: #A99945;
+   font-size: 24px;
+    }
+ </style>
+
+
+
+<body>
+    
+<h1 id="welcome" class="text"> WELCOME TO HNG Internship 4</h1>  
+    
+    
+    <h3 id="friday" class="text"><?php echo "Today is the  ". $date."<br>".$time 
+      ?></h3>
+    
+    
+    
+
+    
+    
+    </body>
+
+</html>
